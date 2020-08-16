@@ -22,9 +22,9 @@ screen = pg.display.set_mode((width, height + 100), 0, 32)
 pg.display.set_caption("Tic Tac Toe")
 
 # Loading images:
-opening = pg.image.load("images.png")
-x_img = pg.image.load("X.png")
-o_img = pg.image.load("O.jpg")
+opening = pg.image.load("images/images.png")
+x_img = pg.image.load("images/X.png")
+o_img = pg.image.load("images/O.jpg")
 
 # Resizing images:
 x_img = pg.transform.scale(x_img, (80, 80))

@@ -48,9 +48,9 @@ screen = pg.display.set_mode(
 )  # Define as dimensões dessa janela
 pg.display.set_caption("Snake")  # Define o nome da janela
 font = pg.font.Font("freesansbold.ttf", 18)  # Fonte do texto da pontuação
-bite_sound = pg.mixer.Sound("BITE.wav")
-gameover_sound = pg.mixer.Sound("Pacman.wav")
-music = pg.mixer.music.load("Music.wav")
+bite_sound = pg.mixer.Sound("music/BITE.wav")
+gameover_sound = pg.mixer.Sound("music/Pacman.wav")
+music = pg.mixer.music.load("music/Music.wav")
 pg.mixer.music.play(-1)
 
 game_over = False  # Define o estado de game over
