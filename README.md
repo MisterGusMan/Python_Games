@@ -1,5 +1,5 @@
 # Python_Projects
-Projects made in python
+Some small games made using Pygame.
 
 Tictactoe.py
 
