@@ -1,4 +1,4 @@
-# Python_Projects
+# Python_Games
 Some small games made using Pygame.
 
 Tictactoe.py
