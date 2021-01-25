@@ -7,15 +7,15 @@ Black = (0, 0, 0)
 White = (255, 255, 255)
 Red = (255, 0, 0)
 Green = (0, 255, 0)
-Screen_Height = 400
-Screen_Width = 400
+Screen_Height = 300
+Screen_Width = 300
 clock = pg.time.Clock()
 score = 0
 
 # Funções auxiliares
 def grid_random():  # Define as posições aleatórias da maçã
-    x = random.randint(0, 39)  # Dimensões da janela menos 1
-    y = random.randint(0, 39)
+    x = random.randint(0, 29)  # Dimensões da janela menos 1
+    y = random.randint(0, 29)
     return (x * 10, y * 10)  # Dimensões totais da maçã
 
 
@@ -136,7 +136,7 @@ while not game_over:
     pg.display.update()
 
 while True:
-    game_over_font = pg.font.Font("freesansbold.ttf", 75)
+    game_over_font = pg.font.Font("freesansbold.ttf", 30)
     game_over_screen = game_over_font.render("Game Over", True, (Red))
     game_over_rect = game_over_screen.get_rect()
     game_over_rect.midtop = (Screen_Height / 2, 10)
