@@ -7,15 +7,15 @@ Black = (0, 0, 0)
 White = (255, 255, 255)
 Red = (255, 0, 0)
 Green = (0, 255, 0)
-Screen_Height = 600
-Screen_Width = 600
+Screen_Height = 400
+Screen_Width = 400
 clock = pg.time.Clock()
 score = 0
 
 # Funções auxiliares
 def grid_random():  # Define as posições aleatórias da maçã
-    x = random.randint(0, 59)  # Dimensões da janela menos 1
-    y = random.randint(0, 59)
+    x = random.randint(0, 39)  # Dimensões da janela menos 1
+    y = random.randint(0, 39)
     return (x * 10, y * 10)  # Dimensões totais da maçã
 
 
@@ -48,9 +48,9 @@ screen = pg.display.set_mode(
 )  # Define as dimensões dessa janela
 pg.display.set_caption("Snake")  # Define o nome da janela
 font = pg.font.Font("freesansbold.ttf", 18)  # Fonte do texto da pontuação
-bite_sound = pg.mixer.Sound("music/BITE.wav")
-gameover_sound = pg.mixer.Sound("music/Pacman.wav")
-music = pg.mixer.music.load("music/Music.wav")
+bite_sound = pg.mixer.Sound("Music/BITE.wav")
+gameover_sound = pg.mixer.Sound("Music/Pacman.wav")
+music = pg.mixer.music.load("Music/Music.wav")
 pg.mixer.music.play(-1)
 
 game_over = False  # Define o estado de game over
