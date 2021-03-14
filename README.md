@@ -1,6 +1,4 @@
 # Python_Games
-Some small games made using Pygame.
+Pequenos jogos criados com a biblioteca Pygame.
 
-Tictactoe.py
-
-Snake.py
+Jogos incluídos: Snake e Jogo da Velha.
